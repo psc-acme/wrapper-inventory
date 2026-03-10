@@ -1,0 +1,36 @@
+{
+    "name": "psc-acme/wrapper-inventory",
+    "description": "Package wrapper-inventory for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\WrapperInventory\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "doctrine/collections": "^2.0",
+        "monolog/monolog": "^3.2.0"
+    },
+    "require-dev": {
+        "behat/behat": "^3.14"
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
